@@ -1,76 +1,85 @@
-// ...existing code...
 "use client";
 import { PixelatedCanvas } from "@/components/ui/pixelated-canvas";
 
 export function About() {
   return (
-    <section className="py-12 md:py-20">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8">
-          {/* Text area */}
-          <div className="w-full md:w-1/2">
-            <p className="text-sm uppercase text-neutral-500 mb-2">
-              Hello, I’m
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-              DEV ATAUR
-            </h2>
-            <p className="mt-2 text-lg text-neutral-300 font-semibold">
-              Full-stack Developer
-            </p>
+    <section className="py-12 md:py-24 bg-transparent">
+      {/* Container with constrained width and centered */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Main Flex Container: Reversing order for Text on Left, Image on Right */}
+        <div className="flex flex-col-reverse md:flex-row-reverse items-center gap-12 lg:gap-0">
+          
+          {/* 1. TEXT AREA (Left Side on Desktop) */}
+          <div className="w-full md:w-1/2 md:px-0 px-20">
+            <div className=" mx-auto md:mx-0">
+              <p className="text-base font-medium uppercase tracking-widest text-indigo-400 mb-2">
+                Hello, I’m
+              </p>
+              
+              <h2 className="text-5xl sm:text-6xl font-black tracking-tighter text-black">
+                ATAUR Rahman
+              </h2>
+              <p className="mt-1 text-2xl text-black font-semibold">
+                Full-stack Developer
+              </p>
 
-            <p className="mt-4 text-neutral-400 leading-relaxed">
-              Ami ekjon full-stack web developer. Next.js, React, TypeScript
-              ebong Tailwind CSS diye ami responsive, accessible ebong
-              performance-optimized web interface toyri kori. Amar kaj-er moddhe
-              clean code, user-focused design, ebong production-ready deployment
-              best practice gulo priority.
-            </p>
+              {/* About Paragraph (Adjusted for better readability) */}
+              <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
+                Ami ekjon **full-stack web developer**. Next.js, React, TypeScript
+                ebong Tailwind CSS diye ami **responsive**, **accessible** ebong
+                **performance-optimized** web interface toyri kori. Amar kaj-er moddhe
+                clean code, user-focused design, ebong production-ready deployment
+                best practice gulo priority.
+              </p>
 
-            <ul className="flex flex-wrap gap-2 mt-4">
-              <li className="px-3 py-1 bg-neutral-800 text-sm text-neutral-200 rounded-full">
-                Next.js
-              </li>
-              <li className="px-3 py-1 bg-neutral-800 text-sm text-neutral-200 rounded-full">
-                React
-              </li>
-              <li className="px-3 py-1 bg-neutral-800 text-sm text-neutral-200 rounded-full">
-                TypeScript
-              </li>
-              <li className="px-3 py-1 bg-neutral-800 text-sm text-neutral-200 rounded-full">
-                Tailwind CSS
-              </li>
-            </ul>
+              {/* Tech Stack Tags (Styled for Dark Mode) */}
+              <ul className="flex flex-wrap gap-3 mt-6">
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                  Next.js
+                </li>
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                  React
+                </li>
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                  TypeScript
+                </li>
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                  Tailwind CSS
+                </li>
+              </ul>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="#projects"
-                className="inline-flex items-center justify-center px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-md text-sm"
-              >
-                View Projects
-              </a>
-              <a
-                href="/resume.pdf"
-                className="inline-flex items-center justify-center px-4 py-2 border border-neutral-700 text-neutral-200 hover:border-neutral-600 rounded-md text-sm"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Download CV
-              </a>
+              {/* Action Buttons (Professional Styling) */}
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg text-base transition duration-300 shadow-md shadow-indigo-500/50"
+                >
+                  View Projects &rarr;
+                </a>
+                <a
+                  href="https://next-js-portfolio-five-omega.vercel.app/resume1.pdf"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-neutral-600 text-neutral-500 hover:border-neutral-500 hover:text-white font-semibold rounded-lg text-base transition duration-300"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Download CV
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Image / PixelatedCanvas */}
-          <div className="w-full md:w-1/2 flex justify-center">
-            <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
+          {/* 2. IMAGE AREA (Right Side on Desktop) */}
+          <div className="w-full md:w-1/2 flex md:justify-center">
+            <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg relative md:pl-0 pl-20">
               <PixelatedCanvas
-                src="https://assets.aceternity.com/manu-red.png"
+                src="https://i.ibb.co/LDkTG7M9/ataur.jpg"
                 width={420}
                 height={520}
                 cellSize={3}
                 dotScale={0.9}
                 shape="square"
-                backgroundColor="#0b0b0b"
+                // Using a very dark color for the background, close to black
+                backgroundColor="#050505" 
                 dropoutStrength={0.35}
                 interactive
                 distortionStrength={2.5}
@@ -82,7 +91,8 @@ export function About() {
                 sampleAverage
                 tintColor="#FFFFFF"
                 tintStrength={0.18}
-                className="rounded-xl border border-neutral-800 shadow-lg"
+                // Enhanced border and shadow
+                className="rounded-xl border border-neutral-700 shadow-2xl shadow-neutral-900/50" 
               />
             </div>
           </div>
@@ -91,4 +101,3 @@ export function About() {
     </section>
   );
 }
-// ...existing code...

@@ -1,23 +1,28 @@
+"use client";
 import React from "react";
 import { TextHoverEffect } from "./ui/text-hover-effect";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
+import { AuroraBackground } from "./ui/aurora-background";
+import { motion } from "motion/react";
 
 const HeroSection = () => {
   return (
-    <BackgroundGradientAnimation
-  gradientBackgroundStart="rgb(0, 0, 50)"
-  gradientBackgroundEnd="rgb(0, 30, 80)"
-  firstColor="20, 100, 180" 
-  secondColor="0, 200, 255"
-  thirdColor="100, 255, 100"
-  fourthColor="255, 100, 0" // Keeping fourth and fifth for variation
-  fifthColor="255, 220, 120"
-  pointerColor="180, 200, 255"
->
-      <div className="md:h-[80vh] flex justify-center items-center md:pt-32">
-        <TextHoverEffect text="DEV ATAUR" />
-      </div>
-    </BackgroundGradientAnimation>
+    <AuroraBackground>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="relative flex flex-col gap-4 items-center justify-center px-4"
+      >
+        <div className="md:h-[80vh] flex justify-center items-center">
+          <TextHoverEffect text="DEV ATAUR" />
+        </div>
+      </motion.div>
+    </AuroraBackground>
   );
 };
 

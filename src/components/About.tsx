@@ -1,5 +1,6 @@
 "use client";
 import { PixelatedCanvas } from "@/components/ui/pixelated-canvas";
+import ataurImg from "@/assets/ataur.jpg"; 
 
 export function About() {
   return (
@@ -72,7 +73,7 @@ export function About() {
           <div className="w-full md:w-1/2 flex md:justify-center">
             <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg relative md:pl-0 pl-20">
               <PixelatedCanvas
-                src="https://i.ibb.co/LDkTG7M9/ataur.jpg"
+                src={ataurImg.src || ataurImg}
                 width={420}
                 height={520}
                 cellSize={3}

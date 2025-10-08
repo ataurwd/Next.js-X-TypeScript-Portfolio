@@ -4,7 +4,7 @@ import ataurImg from "@/assets/ataur.jpg";
 
 export function About() {
   return (
-    <section className="py-12 md:py-24 bg-transparent">
+    <section id="about" className="py-12 md:py-24 bg-transparent">
       {/* Container with constrained width and centered */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Flex Container: Reversing order for Text on Left, Image on Right */}
@@ -71,22 +71,22 @@ export function About() {
 
           {/* 2. IMAGE AREA (Right Side on Desktop) */}
           <div className="w-full md:w-1/2 flex md:justify-center">
-            <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg relative md:pl-0 pl-20">
+            <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg relative md:pl-0 pl-20 cursor-pointer">
               <PixelatedCanvas
-                src={ataurImg.src || ataurImg}
+                src={typeof ataurImg === "string" ? ataurImg : ataurImg.src ?? ""}
                 width={420}
                 height={520}
-                cellSize={3}
+                cellSize={2}
                 dotScale={0.9}
                 shape="square"
                 // Using a very dark color for the background, close to black
                 backgroundColor="#050505" 
-                dropoutStrength={0.35}
+                dropoutStrength={0.15}
                 interactive
-                distortionStrength={2.5}
+                distortionStrength={1.5}
                 distortionRadius={70}
                 distortionMode="swirl"
-                followSpeed={0.2}
+                followSpeed={0.4}
                 jitterStrength={3}
                 jitterSpeed={3}
                 sampleAverage

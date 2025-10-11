@@ -1,8 +1,9 @@
 import { About } from "@/components/About";
 import HeroSection from "@/components/HeroSection";
-import New from "@/components/New";
 import { Skill } from "@/components/Skill";
 import { SkillSection } from "@/components/SkillSection";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import { Portfolio } from "./../components/Portfolio";
 
 export default function Home() {
   return (
@@ -10,7 +11,12 @@ export default function Home() {
       <HeroSection />
       <About />
       <SkillSection />
-      <Skill/>
+      <Skill />
+      <SmoothCursor />
+      <h1 className="text-black md:py-10 pt-5 text-center md:text-5xl text-xl font-bold">
+        Featured Projects
+      </h1>
+      <Portfolio />
     </div>
   );
 }

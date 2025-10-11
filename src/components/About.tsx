@@ -77,7 +77,7 @@ export function About() {
                 shape="square"
                 // Using a very dark color for the background, close to black
                 backgroundColor="#050505" 
-                dropoutStrength={0.15}
+                dropoutStrength={0.12}
                 interactive
                 distortionStrength={1.5}
                 distortionRadius={70}

@@ -26,23 +26,19 @@ export function About() {
 
               {/* About Paragraph (Adjusted for better readability) */}
               <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
-                Ami ekjon **full-stack web developer**. Next.js, React, TypeScript
-                ebong Tailwind CSS diye ami **responsive**, **accessible** ebong
-                **performance-optimized** web interface toyri kori. Amar kaj-er moddhe
-                clean code, user-focused design, ebong production-ready deployment
-                best practice gulo priority.
+                I am <b className="">Ataur Rahman</b> a web developer with 3+ years of experience in WordPress. I specialize in creating responsive, accessible, and performance-optimized web interfaces using Next.js, React, TypeScript, and Tailwind CSS. My work focuses on clean code, user-centered design, and production-ready deployment best practices.
               </p>
 
               {/* Tech Stack Tags (Styled for Dark Mode) */}
               <ul className="flex flex-wrap gap-3 mt-6">
                 <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
-                  Next.js
+                  Wordpress
                 </li>
                 <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
                   React
                 </li>
                 <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
-                  TypeScript
+                  JavaScript
                 </li>
                 <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
                   Tailwind CSS

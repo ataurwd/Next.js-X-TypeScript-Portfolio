@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import { Skill } from "@/components/Skill";
 import { SkillSection } from "@/components/SkillSection";
 import { Portfolio } from "./../components/Portfolio";
+import TimelinePage2 from "@/components/Education";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         Featured Projects
       </h1>
       <Portfolio />
+      <TimelinePage2/>
     </div>
   );
 }

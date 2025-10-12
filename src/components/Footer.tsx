@@ -86,7 +86,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="py-10 px-4 sm:px-6 lg:px-8 font-inter relative overflow-hidden bg-black">
+    <footer className="py-10 px-4 sm:px-6 lg:px-8 font-inter relative overflow-hidden bg-black" id="contact">
       <div className="max-w-7xl mx-auto flex flex-col items-center relative z-10">
         <div className="mb-6 flex items-center justify-center">
         <img className="w-1/2" src="https://i.ibb.co/xqWShF30/logo.png" alt="" />

@@ -4,7 +4,10 @@ import ataurImg from "@/assets/ataur.jpg";
 
 export function About() {
   return (
-    <section id="about" className="py-12 md:py-24 bg-transparent">
+    <section id="about" className="py-12 md:py-24 bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: "url('https://i.ibb.co/ymmwmxSd/Screenshot-19.png')",
+  }}>
       {/* Container with constrained width and centered */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Flex Container: Reversing order for Text on Left, Image on Right */}

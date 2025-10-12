@@ -189,6 +189,10 @@ body{
   }
 }
 
+
+html{
+  scroll-behavior: smooth;
+}
 /* #23C5F5 
 brand color code
 cyan-400

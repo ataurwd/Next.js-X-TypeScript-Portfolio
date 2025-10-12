@@ -68,7 +68,7 @@ const content = [
 
 export function SkillSection() {
   return (
-    <div className="w-full py-4">
+    <div className="w-full" id="expertise">
       <StickyScroll content={content} />
     </div>
   );

@@ -27,10 +27,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { href: "#work", text: "Work" },
+    { href: "#", text: "Home" },
     { href: "#about", text: "About" },
-    { href: "#services", text: "Services" },
-    { href: "#blog", text: "Blog" },
+    { href: "#expertise", text: "Expertise" },
+    { href: "#Projects", text: "Projects" },
+    { href: "#education", text: "education" },
     { href: "#contact", text: "Contact" },
   ];
 
@@ -47,10 +48,7 @@ const Navbar = () => {
           {/* Logo and Name */}
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2 group w-32">
-              <img
-                src="https://i.ibb.co/xqWShF30/logo.png"
-                alt="Logo"
-              />
+              <img src="https://i.ibb.co/xqWShF30/logo.png" alt="Logo" />
             </a>
           </div>
 

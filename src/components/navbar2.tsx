@@ -48,8 +48,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2 group w-32">
               <img
-                src="https://next-js-portfolio-five-omega.vercel.app/_next/image?url=%2Fassets%2Flogo%2Flogo.png&w=256&q=75"
-                alt=""
+                src="https://i.ibb.co/xqWShF30/logo.png"
+                alt="Logo"
               />
             </a>
           </div>

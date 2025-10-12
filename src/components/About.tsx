@@ -13,7 +13,7 @@ export function About() {
           {/* 1. TEXT AREA (Left Side on Desktop) */}
           <div className="w-full md:w-1/2 md:px-0 px-20">
             <div className=" mx-auto md:mx-0">
-              <p className="text-base font-medium uppercase tracking-widest text-indigo-400 mb-2">
+              <p className="text-base font-medium uppercase tracking-widest text-[#23C5F5] mb-2">
                 Hello, I’m
               </p>
               
@@ -31,16 +31,16 @@ export function About() {
 
               {/* Tech Stack Tags (Styled for Dark Mode) */}
               <ul className="flex flex-wrap gap-3 mt-6">
-                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-[#23C5F5] rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
                   Wordpress
                 </li>
-                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-[#23C5F5] rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
                   React
                 </li>
-                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-[#23C5F5] rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
                   JavaScript
                 </li>
-                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-indigo-400 rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
+                <li className="px-4 py-1 bg-neutral-900 text-sm font-medium text-[#23C5F5] rounded-full border border-neutral-700 hover:bg-neutral-800 transition">
                   Tailwind CSS
                 </li>
               </ul>
@@ -49,7 +49,7 @@ export function About() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="#projects"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg text-base transition duration-300 shadow-md shadow-indigo-500/50"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#23C5F5] hover:bg-[#1b90b4] text-white font-semibold rounded-lg text-base transition duration-300 shadow-md shadow-indigo-500/50"
                 >
                   View Projects &rarr;
                 </a>

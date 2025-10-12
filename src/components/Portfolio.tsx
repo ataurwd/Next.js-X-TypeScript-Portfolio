@@ -70,7 +70,7 @@ export function Portfolio() {
               href={item.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md transition-all"
+              className="text-white bg-[#23C5F5] hover:bg-[#0c6f8d] px-4 py-2 rounded-md transition-all"
             >
               Live Demo
             </a>

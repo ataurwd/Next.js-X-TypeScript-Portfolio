@@ -2,7 +2,6 @@ import { About } from "@/components/About";
 import HeroSection from "@/components/HeroSection";
 import { Skill } from "@/components/Skill";
 import { SkillSection } from "@/components/SkillSection";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { Portfolio } from "./../components/Portfolio";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
       <About />
       <SkillSection />
       <Skill />
-      <SmoothCursor />
+      {/* <SmoothCursor /> */}
       <h1 className="text-black md:py-10 pt-5 text-center md:text-5xl text-xl font-bold">
         Featured Projects
       </h1>
